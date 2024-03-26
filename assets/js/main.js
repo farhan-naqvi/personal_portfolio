@@ -61,14 +61,14 @@ window.addEventListener('scroll',scrollTop)
 
 
 // mixitup filter portfolio 
-const mixer = mixitup('.portfolio__container', {
-    selectors: {
-        target: '.portfolio__content'
-    },
-    animation: {
-        duration: 400
-    }
-});
+// const mixer = mixitup('.portfolio__container', {
+//     selectors: {
+//         target: '.portfolio__content'
+//     },
+//     animation: {
+//         duration: 400
+//     }
+// });
 
 
 // link active portfolio 
