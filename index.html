@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Farhan Naqvi - Software Engineer</title>
+  <meta name="description" content="Syed Farhan Naqvi - Software Engineer. Portfolio, projects, and contact." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background grid + noise -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Floating Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav__mark">SFN</a>
+    <div class="nav__links">
+      <a href="#about" data-nav="about">About</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#education" data-nav="education">Education</a>
+      <a href="#awards" data-nav="awards">Awards</a>
+      <a href="#blogs" data-nav="blogs">Blogs</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav__cta">Let's talk</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 00 &mdash; introduction</p>
+
+      <h1 class="hero__title">
+        <span class="reveal reveal--delay-1">Hi, I'm <span class="grad-text">Syed Farhan Naqvi</span></span>
+        <span class="reveal reveal--delay-2">I build <span class="hero__type" id="heroType"></span></span>
+      </h1>
+
+      <p class="hero__subtitle reveal reveal--delay-3">
+        Software Engineer with 3+ years of experience building production-grade ML systems,
+        distributed backend services, and anomaly detection pipelines.
+      </p>
+
+      <div class="hero__actions reveal reveal--delay-4">
+        <a href="#projects" class="btn btn--primary">
+          <span>View projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Contact me</a>
+      </div>
+
+      <div class="hero__terminal reveal reveal--delay-5" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal__title">~/farhan</span>
+          </div>
+          <div class="terminal__body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal__out">Syed Farhan Naqvi — Software Engineer</p>
+            <p><span class="prompt">$</span> cat focus.txt</p>
+            <p class="terminal__out">AI systems · distributed systems · ML infrastructure</p>
+            <p><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner about">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 01 &mdash; about-me</p>
+
+      <div class="about__grid">
+        <div class="about__avatar reveal">
+          <img src="assets/86bcde27-4376-42b6-beaa-f80df090c561.jpg" alt="Farhan Naqvi portrait" />
+          <div class="about__status">
+            <span class="status-dot"></span> Available for new opportunities
+          </div>
+        </div>
+
+        <div class="about__content">
+          <h2 class="section__title reveal">
+            Engineering thoughtful software, <span class="grad-text">one system at a time.</span>
+          </h2>
+
+          <div class="about__text">
+            <p class="reveal reveal--line">Software Engineer based in Stuttgart with experience building ML systems, distributed backend services, and anomaly detection pipelines using Python, C++, Java, and Go.</p>
+            <p class="reveal reveal--line">I specialize in production-grade gRPC services, enterprise anomaly detection, and RAG/LLM-driven applications with strong reliability and observability.</p>
+            <p class="reveal reveal--line">I welcome new opportunities to design scalable systems, lead data-intensive workflows, and build agentic AI experiences.</p>
+          </div>
+
+          <div class="about__stats reveal">
+            <div class="stat">
+              <span class="stat__value">3+</span>
+              <span class="stat__label">Years building software</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">10+</span>
+              <span class="stat__label">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">5+</span>
+              <span class="stat__label">Teams &amp; domains</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 02 &mdash; tech-stack</p>
+      <h2 class="section__title reveal">Tools I reach for</h2>
+      <p class="section__lead reveal">A snapshot of the languages, frameworks, and platforms behind most of my work.</p>
+
+      <div class="skills__grid">
+        <div class="skill-card reveal">
+          <h3 class="skill-card__title">
+            <span class="skill-card__icon">&lt;/&gt;</span> Languages
+          </h3>
+          <div class="chips">
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">Golang</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Shell</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3 class="skill-card__title">
+            <span class="skill-card__icon">✦</span> ML &amp; AI
+          </h3>
+          <div class="chips">
+            <span class="chip">TensorFlow</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Anomaly Detection</span>
+            <span class="chip">NLP</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Agentic AI</span>
+            <span class="chip">LLMs</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3 class="skill-card__title">
+            <span class="skill-card__icon">◧</span> Backend &amp; Systems
+          </h3>
+          <div class="chips">
+            <span class="chip">gRPC</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Multithreading</span>
+            <span class="chip">Distributed Systems</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3 class="skill-card__title">
+            <span class="skill-card__icon">▣</span> Databases &amp; Tools
+          </h3>
+          <div class="chips">
+            <span class="chip">MySQL</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">OracleDB</span>
+            <span class="chip">Elastic Stack</span>
+            <span class="chip">Vector DBs</span>
+            <span class="chip">Jenkins</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 03 &mdash; selected-work</p>
+      <h2 class="section__title reveal">Featured projects</h2>
+      <p class="section__lead reveal">A handful of recent builds - products, platforms, and experiments.</p>
+
+      <div class="projects__grid">
+
+        <article class="project-card reveal" data-project="1">
+          <div class="project-card__media">
+            <div class="project-card__placeholder" style="--g1:#5EEAD4; --g2:#3B82F6;"></div>
+            <span class="project-card__view">View case study</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Visual Multi-Agent Orchestration Platform</h3>
+              <span class="project-card__year">2026</span>
+            </div>
+            <p>Built a full-stack multi-agent platform with React Flow, RAG pipelines, MCP-compatible tooling, and runtime execution tracing for configurable workflows.</p>
+            <div class="chips chips--sm">
+              <span class="chip">React</span>
+              <span class="chip">Python</span>
+              <span class="chip">RAG</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="2">
+          <div class="project-card__media">
+            <img src="assets/p2.webp" alt="Distributed object storage project screenshot" class="project-card__placeholder" />
+            <span class="project-card__view">View case study</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Distributed Object Storage with Deduplication</h3>
+              <span class="project-card__year">2026</span>
+            </div>
+            <p>Designed a Go-based distributed object store with gRPC streaming, content-addressable persistence, reference-count deduplication, and asynchronous garbage collection.</p>
+            <div class="chips chips--sm">
+              <span class="chip">Go</span>
+              <span class="chip">gRPC</span>
+              <span class="chip">PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- <article class="project-card reveal" data-project="3">
+          <div class="project-card__media">
+            <div class="project-card__placeholder" style="--g1:#F472B6; --g2:#A78BFA;"></div>
+            <span class="project-card__view">View case study</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Enterprise Anomaly Detection Pipeline</h3>
+              <span class="project-card__year">2025</span>
+            </div>
+            <p>Architected ML and statistical anomaly detection for Oracle/MySQL workloads, monitoring 100K+ events to detect malicious spikes and reduce false alerts.</p>
+            <div class="chips chips--sm">
+              <span class="chip">Anomaly Detection</span>
+              <span class="chip">Oracle</span>
+              <span class="chip">Signal Engineering</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="4">
+          <div class="project-card__media">
+            <div class="project-card__placeholder" style="--g1:#3B82F6; --g2:#22D3EE;"></div>
+            <span class="project-card__view">View case study</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Real-time Audit Log Analytics Pipeline</h3>
+              <span class="project-card__year">2024</span>
+            </div>
+            <p>Implemented a PostgreSQL-to-Elasticsearch ingestion pipeline with Docker/Kubernetes and Kibana dashboards for monitoring service analytics at scale.</p>
+            <div class="chips chips--sm">
+              <span class="chip">Elasticsearch</span>
+              <span class="chip">Python</span>
+              <span class="chip">Kubernetes</span>
+            </div>
+          </div>
+        </article> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS / HOW I WORK ============ -->
+  <!-- <section class="section" id="process">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 04 &mdash; how-i-work</p>
+      <h2 class="section__title reveal">From idea to production</h2>
+      <p class="section__lead reveal">A simple loop I repeat on every project, big or small.</p>
+
+      <div class="process__grid">
+        <div class="process-card reveal">
+          <span class="process-card__tag">// understand</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M16 16L21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Understand</h3>
+          <p>Dig into the problem, the users, and the constraints before writing a single line of code.</p>
+        </div>
+
+        <div class="process-card reveal">
+          <span class="process-card__tag">// design</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 16L9 21L20 10L15 5L4 16Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M13 7L17 11" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Design &amp; plan</h3>
+          <p>Sketch the system &mdash; architecture, data flow, and UI &mdash; so every decision afterwards is easier.</p>
+        </div>
+
+        <div class="process-card reveal">
+          <span class="process-card__tag">// build</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 4L3 12L8 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 4L21 12L16 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Build &amp; implement</h3>
+          <p>Ship working software in small increments, with tests and reviews along the way.</p>
+        </div>
+
+        <div class="process-card reveal">
+          <span class="process-card__tag">// deploy</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3V15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 19H19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Deploy &amp; iterate</h3>
+          <p>Release, measure, and refine &mdash; treating launch as the start of the work, not the end.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 05 &mdash; experience</p>
+      <h2 class="section__title reveal">Where I've worked</h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3>Software Engineer II (Member of Technical Staff II)</h3>
+              <span class="timeline__date">April 2025 &ndash; September 2025</span>
+            </div>
+            <p class="timeline__company">Cohesity</p>
+            <ul class="timeline__list">
+              <li>Engineered garbage collector logic with mount-level failure detection, periodic checks, and unresponsive mount handling for 100+ mounts per cluster.</li>
+              <li>Integrated Protobuf extension descriptor parsing in a Go adapter to onboard 3+ third-party data sources.</li>
+              <li>Delivered high-performance C++ gRPC services with thread-safety guarantees and zero critical production fault-tolerance failures.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3>Software Engineer I (Member of Technical Staff I)</h3>
+              <span class="timeline__date">December 2024 &ndash; March 2025</span>
+            </div>
+            <p class="timeline__company">Cohesity</p>
+            <ul class="timeline__list">
+              <li>Architected ML and statistical anomaly detection pipelines for Oracle and MySQL workloads spanning 100K+ fine-grained events.</li>
+              <li>Improved model stability through signal engineering, feature tuning, and ingestion optimization for imbalanced event distributions.</li>
+              <li>Reduced false alert volume while maintaining high sensitivity for malicious spikes and data integrity risks.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3>Associate Software Engineer</h3>
+              <span class="timeline__date">July 2023 &ndash; December 2024</span>
+            </div>
+            <p class="timeline__company">Veritas Technologies LLC</p>
+            <ul class="timeline__list">
+              <li>Developed unsupervised anomaly detection systems over 25GB+ audit logs using K-Means, DBSCAN, and Isolation Forest.</li>
+              <li>Automated PostgreSQL to Elasticsearch ingestion pipelines for 100M+ records with Logstash and containerized deployments.</li>
+              <li>Delivered Kibana dashboards and optimized backend services in C++ and Java for scalability and fault tolerance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 06 &mdash; education</p>
+      <h2 class="section__title reveal">Academic background</h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3>Master of Science, Computer Science</h3>
+              <span class="timeline__date">October 2025 &ndash; Present</span>
+            </div>
+            <p class="timeline__company">University of Stuttgart, Stuttgart, Germany</p>
+            <ul class="timeline__list">
+              <li>Relevant coursework: Foundations of AI, Machine Perception and Learning, Computer Vision, Reinforcement Learning, Knowledge Graphs, Data Warehousing, Data Mining, Cloud Computing, Deep Learning, Detection &amp; Pattern Recognition, Data Intensive Computing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3>Bachelor of Engineering, Information Technology</h3>
+              <span class="timeline__date">September 2021 &ndash; June 2023</span>
+            </div>
+            <p class="timeline__company">Pune University, Pune, India</p>
+            <ul class="timeline__list">
+              <li>Honours in Data Science</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3>Bachelor of Engineering, Information Technology</h3>
+              <span class="timeline__date">September 2019 &ndash; June 2023</span>
+            </div>
+            <p class="timeline__company">Pune University, Pune, India</p>
+            <ul class="timeline__list">
+              <li>Relevant coursework : Data Structures, OOP, Advanced DBMS, Machine Learning, Deep Learning, and Big Data Analysis.</li>
+              <li>Built strong fundamentals in operating systems, algorithms, data science, and scalable data engineering.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AWARDS & PUBLICATIONS ============ -->
+  <section class="section" id="awards">
+
+    
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 07 &mdash; awards</p>
+      <h2 class="section__title reveal">Recognition &amp; publications</h2>
+      <p class="section__lead reveal">Selected awards and published research that highlight practical impact and academic contributions.</p>
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Recent works in Sign Language Recognition using deep learning approach - A Survey</h3>
+              <span class="project-card__year">IEEE · Feb 19, 2024</span>
+            </div>
+            <p>Across the globe, different countries have their own sign language used by hearing and speech-impaired people. This paper surveys, compares, and summarizes CNN, Transformer, sequence-based, keypoint-based, and hardware-assisted methods for sign language recognition.</p>
+            <p><a href="https://ieeexplore.ieee.org/document/10430576" target="_blank" rel="noopener noreferrer">Show publication</a></p>
+          </div>
+        </article>
+        
+        <article class="project-card reveal">
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Dynamic Bi-Handed Sign Recognition using 3D-CNN and Gated Recurrent Unit for Indian Sign Language</h3>
+              <span class="project-card__year">2026</span>
+            </div>
+            <p>Presented a novel ISL recognition approach using a volunteer-sourced video dataset, Mediapipe spatial feature extraction, three CNN models with sliding windows, and a GRU sequence model. The method achieved 99.71% accuracy on 21 dynamically bi-handed Indian Sign Language words.</p>
+            <p><a href="#" target="_blank" rel="noopener noreferrer">Scheduled for publishing in Issue 2/2026 of journal AC&CS</a></p>
+          
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>3rd Prize, Concepts: Application Development</h3>
+              <span class="project-card__year">Intercollegiate International</span>
+            </div>
+            <p>Prototyped a bidirectional app for hearing and speech impairments with video-based ISL-to-text translation and text-to-GIF sign synthesis.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Winner, DeveloperWeek Global Cloud Hackathon</h3>
+              <span class="project-card__year">2021</span>
+            </div>
+            <p>Built FaceTrace, a real-time facial recognition and mask detection app processing live video at 24+ FPS.</p>
+            <p><a href="https://devpost.com/software/facetrace-uwofht" target="_blank" rel="noopener noreferrer">More details</a></p>
+          </div>
+        </article>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOGS ============ -->
+  <section class="section" id="blogs">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 08 &mdash; featured blogs</p>
+      <h2 class="section__title reveal">Featured writing on Hashnode</h2>
+      <p class="section__lead reveal">A curated selection of recent technical posts, plus a quick path to the full Hashnode archive.</p>
+
+      <div class="blogs__top">
+        <div class="blogs__carousel-wrapper reveal">
+          <div class="blogs__carousel" id="blogsCarousel">
+            <!-- <article class="blog-card">
+              <div class="blog-card__body">
+                <span class="blog-card__meta">Hashnode · Featured</span>
+                <h3>Sign language recognition with 3D-CNN and GRU</h3>
+                <p>Deep learning approaches for Indian Sign Language recognition using spatial keypoints, sequence modeling, and video-based feature extraction.</p>
+                <a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer" class="blog-card__link">Read on Hashnode</a>
+              </div>
+            </article> -->
+
+            <article class="blog-card">
+              <div class="blog-card__body">
+                <span class="blog-card__meta">Hashnode · Featured</span>
+                <h3>Building reliable distributed services with gRPC</h3>
+                <p>Insights into designing scalable backend systems with gRPC, protobuf contracts, and production-ready service orchestration.</p>
+                <a href="https://farhanbytemaster.hashnode.dev/building-a-distributed-storage-metadata-service-in-go?utm_source=hashnode&utm_medium=feed" target="_blank" rel="noopener noreferrer" class="blog-card__link">Read on Hashnode</a>
+              </div>
+            </article>
+
+            <!-- <article class="blog-card">
+              <div class="blog-card__body">
+                <span class="blog-card__meta">Hashnode · Featured</span>
+                <h3>Agentic AI workflows for data-driven systems</h3>
+                <p>Lessons from building agentic pipelines and RAG-enabled tools for ML systems, observability, and ecosystem integration.</p>
+                <a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer" class="blog-card__link">Read on Hashnode</a>
+              </div>
+            </article> -->
+          </div>
+
+          <button class="carousel__nav carousel__nav--prev" type="button" aria-label="Previous blog">‹</button>
+          <button class="carousel__nav carousel__nav--next" type="button" aria-label="Next blog">›</button>
+        </div>
+
+        <div class="blogs__list reveal">
+          <h3>Browse the full blog archive</h3>
+          <p>Access all Hashnode articles covering AI, machine learning, distributed systems, and sign language research.</p>
+          <ul class="blog-list">
+            <li><a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer">All posts on Hashnode</a></li>
+            <!-- <li><a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer">Sign language recognition research</a></li>
+            <li><a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer">Distributed systems and gRPC engineering</a></li>
+            <li><a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer">Agentic AI workflows and RAG</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="section__inner">
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 09 &mdash; contact</p>
+      <h2 class="contact__title reveal">
+        Let's build something <span class="grad-text">great</span> together.
+      </h2>
+      <p class="section__lead reveal">
+        Based in Stuttgart, Germany. Reach out by email or LinkedIn for consulting, collaboration, or hiring.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__actions reveal">
+          <button class="email-btn" id="emailBtn" data-email="farhannaqvi16@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6L12 13L21 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span class="email-btn__text">farhannaqvi16@gmail.com</span>
+            <span class="email-btn__copied">Copied!</span>
+          </button>
+
+          <div class="social-links">
+            <a href="https://linkedin.com/in/farhan-naqvi" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://hashnode.com/@farhan16" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 5.27L18.18 8.5L12 11.73L5.82 8.5L12 5.27ZM14.5 16.5L12 18.13L9.5 16.5V12.5L12 14.13L14.5 12.5V16.5Z"/></svg>
+              <span>Hashnode</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span>Send message</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>&copy; <span id="year"></span> Syed Farhan Naqvi. Built with a lot of thought.</p>
+      <a href="#top" class="footer__back">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close case study">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal__media" id="modalMedia"></div>
+      <div class="modal__body">
+        <span class="modal__year" id="modalYear"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+
+        <div class="modal__section">
+          <h4>Role</h4>
+          <p id="modalRole"></p>
+        </div>
+        <div class="modal__section">
+          <h4>Tech stack</h4>
+          <div class="chips" id="modalTags"></div>
+        </div>
+        <div class="modal__section">
+          <h4>Outcome</h4>
+          <div id="modalOutcome"></div>
+        </div>
+
+        <a href="#" id="modalLink" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <span>View live project</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
