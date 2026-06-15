@@ -149,7 +149,9 @@ const PROJECT_DATA = {
     
     ],
     tags: ["Model Context Protocol (MCP)", "Retrieval-Augmented Generation (RAG)", "Large Language Models (LLM)", "Multi-agent Systems", "Vector Databases", "React Flow", "Full-stack Development", "Workflow Orchestration", "AI Platform"],
-    link: "#",
+    link: "https://farhanbytemaster.hashnode.dev/building-a-visual-workflow-designer-for-llm-multi-agent-systems?utm_source=hashnode&utm_medium=feed",
+    image: "assets/1_blog.png",
+    imageAlt: "Multi-agent orchestration platform screenshot",
     gradient: ["#5EEAD4", "#3B82F6"],
   },
   2: {
@@ -164,6 +166,8 @@ const PROJECT_DATA = {
     ],
     tags: ["Go", "gRPC", "PostgreSQL", "Distributed Systems", "Content-Addressable Storage", "Garbage Collection", "Deduplication", "Resiliency"],
     link: "https://farhanbytemaster.hashnode.dev/building-a-distributed-storage-metadata-service-in-go",
+    image: "assets/p2.webp",
+    imageAlt: "Distributed object storage project screenshot",
     gradient: ["#A78BFA", "#5EEAD4"],
   },
   // 3: {
@@ -231,7 +235,13 @@ function initProjectModal() {
         tagsWrap.appendChild(span);
       });
 
-      media.style.background = `linear-gradient(135deg, ${data.gradient[0]}, ${data.gradient[1]})`;
+      if (data.image) {
+        media.innerHTML = `<img src="${data.image}" alt="${data.imageAlt || data.title}" class="modal__image" />`;
+        media.style.background = "none";
+      } else {
+        media.innerHTML = "";
+        media.style.background = `linear-gradient(135deg, ${data.gradient[0]}, ${data.gradient[1]})`;
+      }
 
       openModal();
     });
