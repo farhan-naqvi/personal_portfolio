@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollReveal();
   initHeroTypewriter();
   initProjectModal();
+  initProjectLabRail();
   initEmailCopy();
   initContactForm();
   initBlogCarousel();
@@ -170,7 +171,113 @@ const PROJECT_DATA = {
     imageAlt: "Distributed object storage project screenshot",
     gradient: ["#A78BFA", "#5EEAD4"],
   },
-  // 3: {
+  3: {
+    title: "Chronos AI",
+    year: "AMD Developer Hackathon Act II",
+    description: "Decision-intelligence digital twin MVP that builds memory graphs from workspace data and simulates evidence-backed future branches for decisions.",
+    role: "Hackathon AI product engineering",
+    outcome: [
+      "Built a working decision-intelligence application that ingests workspace context from sources such as Slack, GitHub, and Notion to form a memory graph.",
+      "Implemented a heuristic simulation flow for exploring plausible future branches per decision, including evidence and rationale surfaces.",
+      "Built for the AMD Developer Hackathon Act II and published the live frontend, source repository, and demo video while the written project article is still pending.",
+    ],
+    tags: ["React 19", "Vite", "FastAPI", "LangGraph", "LangChain", "ChromaDB", "React Flow", "Decision Intelligence"],
+    link: "https://chronos-ai-frontend.vercel.app/",
+    links: [
+      { label: "Open live app", url: "https://chronos-ai-frontend.vercel.app/" },
+      { label: "View GitHub", url: "https://github.com/shurender/Chronos-AI" },
+      { label: "Watch demo video", url: "https://github.com/shurender/Chronos-AI/blob/main/Frontend/public/demo-video.mp4" },
+    ],
+    video: "https://raw.githubusercontent.com/shurender/Chronos-AI/main/Frontend/public/demo-video.mp4",
+    videoAlt: "Chronos AI application demo video",
+    gradient: ["#76D8C4", "#8FB5D9"],
+  },
+  4: {
+    title: "TorqBase: AI Knowledge Platform for Two-Stroke Engine Diagnostics",
+    year: "Hirth Engines Hackathon Challenge",
+    description: "An AI-powered technical knowledge platform that turns engine manuals, reports, and engineering documents into cited answers and an interactive diagnostic knowledge graph.",
+    role: "AI knowledge platform and diagnostic graph engineering",
+    outcome: [
+      "Built TorqBase for the Hirth Engines challenge to make large, messy engineering document collections easier to search, explain, and use for troubleshooting.",
+      "Implemented technical document ingestion, source-backed Q&A with citations, and an interactive 2D Knowledge Graph connecting symptoms, causes, fixes, specifications, parts, and evidence.",
+      "Added diagnostic paths, evidence inspection, graph search, filters, focus mode, ranked neighborhoods, and corpus inventory workflows for engineering document collections.",
+    ],
+    tags: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "D3.js", "RAG", "Knowledge Graph", "LLM Pipeline"],
+    link: "https://github.com/farhan-naqvi/TorqBase",
+    links: [
+      { label: "View GitHub Repository", url: "https://github.com/farhan-naqvi/TorqBase" },
+      { label: "View project deck", url: "assets/torqbase-hackxplore-deck.pdf" },
+    ],
+    image: "assets/torqbase-cover.webp",
+    imageAlt: "TorqBase HackXplore Hirth Engines challenge cover slide",
+    gradient: ["#3B82F6", "#5EEAD4"],
+  },
+  5: {
+    title: "FlowForge",
+    year: "In progress",
+    description: "A production-grade data pipeline orchestration platform for defining pipelines visually, declaratively, or programmatically, then compiling them to workflow executors with deployment and observability support.",
+    role: "Pipeline orchestration platform architecture and implementation",
+    outcome: [
+      "Building a multi-mode pipeline authoring experience across a visual DAG editor, YAML specifications, and a Python SDK backed by a shared intermediate representation.",
+      "Designing executor support for Argo Workflows and Apache Airflow so pipeline definitions can compile into deployable workflow targets.",
+      "Implementing platform foundations around infrastructure deployment, transformation runtime, execution tracking, metrics, logs, cost estimation, and data lineage.",
+      "Marked as in progress while the repository and public release are still being finalized.",
+    ],
+    tags: ["Go", "TypeScript", "React", "Python SDK", "YAML", "Argo Workflows", "Apache Airflow", "Terraform", "Helm", "Observability"],
+    status: "In progress",
+    gradient: ["#34D399", "#60A5FA"],
+  },
+  6: {
+    title: "ErasureGraph",
+    year: "In progress",
+    description: "An in-progress proof-carrying deletion dashboard for privacy, security, compliance, and data-platform teams that need auditable erasure workflows across copied, derived, cached, and backed-up data.",
+    role: "Privacy engineering product design and frontend implementation",
+    outcome: [
+      "Building a responsive React prototype that models how a data subject's records move through source systems, exports, document chunks, embeddings, caches, analytics datasets, training manifests, and backups.",
+      "Designing request detail views that track explicit deletion outcomes for every affected artifact, including verification, evidence, certificates, execution status, and audit surfaces.",
+      "Wiring Supabase authentication and organization edge functions while using typed seed data for a realistic Northstar Health AI demo scenario.",
+      "Keeping the project marked as in progress because real deletion against external systems and the production backend are outside the current phase.",
+    ],
+    tags: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "React Router", "Data Lineage", "Privacy Engineering", "Compliance"],
+    status: "In progress",
+    gradient: ["#818CF8", "#22D3EE"],
+  },
+  7: {
+    title: "Private Agent Governance Prototype",
+    year: "In development",
+    description: "A confidential local-first React and TypeScript project exploring policy generation, dashboard workflows, and agent-aware website governance without exposing the underlying product direction.",
+    role: "Private product engineering, interaction design, and frontend architecture",
+    outcome: [
+      "Designed a local-first dashboard for managing rules around automated site interaction while keeping user data private by default.",
+      "Built a multi-step generator that turns owner intent into structured web-facing policy outputs and previewable configuration files.",
+      "Created simulation tools for testing how different classes of non-human visitors might interpret access rules before acting.",
+      "Added export/import support, local browser persistence, documentation views, preview surfaces, analytics-style flows, and settings workflows without requiring a backend or user account.",
+      "Kept public-facing details intentionally abstract because the project is still confidential and in development.",
+    ],
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "Framer Motion", "Local Storage", "Policy Simulation", "Agent-Aware UX"],
+    status: "In development",
+    gradient: ["#F59E0B", "#64748B"],
+  },
+  8: {
+    title: "FounderOS",
+    year: "AMD AI Developer Hackathon ACT II - Unicorn Track",
+    description: "An AI operating system for startup founders that turns a single startup idea into a structured founder workspace coordinated by a team of 9 AI executive agents.",
+    role: "Full-stack AI product engineering and agent workflow design",
+    outcome: [
+      "Built a real-time founder dashboard that coordinates CEO, Market Researcher, CTO, UX Designer, Software Engineer, Marketing Director, VC Analyst, Finance Officer, and Legal Advisor agents.",
+      "Implemented Server-Sent Events streaming for live agent activity, progress updates, and structured output generation.",
+      "Generated founder-ready outputs including market research, pitch material, technical architecture, MVP code, deployment guidance, operational next steps, and resource council requests.",
+      "Integrated Fireworks AI for LLM-powered agent generation and Tavily for web-backed market research.",
+      "Added local runtime project storage, safe environment-based API key handling, Docker support, and AMD ROCm-oriented backend scaffolding for future GPU deployment.",
+    ],
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express", "Server-Sent Events", "Fireworks AI", "Tavily API", "Docker", "ROCm"],
+    link: "https://github.com/farhan-naqvi/FounderOS",
+    links: [
+      { label: "View GitHub Repository", url: "https://github.com/farhan-naqvi/FounderOS" },
+    ],
+    gradient: ["#F97316", "#8B5CF6"],
+  },
+  // 5: {
   //   title: "Enterprise Anomaly Detection Pipeline",
   //   year: "2025",
   //   description: "Architected ML-based anomaly detection for Oracle and MySQL workloads, monitoring 100K+ events and improving detection stability on imbalanced data.",
@@ -196,7 +303,7 @@ const PROJECT_DATA = {
 
 function initProjectModal() {
   const modal = document.getElementById("projectModal");
-  const cards = document.querySelectorAll(".project-card");
+  const cards = document.querySelectorAll(".project-card[data-project]");
   if (!modal || !cards.length) return;
 
   const media = document.getElementById("modalMedia");
@@ -206,6 +313,7 @@ function initProjectModal() {
   const role = document.getElementById("modalRole");
   const outcome = document.getElementById("modalOutcome");
   const tagsWrap = document.getElementById("modalTags");
+  const linksWrap = document.getElementById("modalLinks");
   const link = document.getElementById("modalLink");
 
   cards.forEach((card) => {
@@ -225,7 +333,29 @@ function initProjectModal() {
         outcome.textContent = data.outcome;
       }
 
-      link.href = data.link;
+      if (linksWrap && Array.isArray(data.links) && data.links.length) {
+        linksWrap.innerHTML = "";
+        linksWrap.style.display = "";
+        data.links.forEach((item, index) => {
+          const anchor = document.createElement("a");
+          anchor.href = item.url;
+          anchor.target = "_blank";
+          anchor.rel = "noopener noreferrer";
+          anchor.className = index === 0 ? "btn btn--primary" : "btn btn--ghost";
+          anchor.innerHTML = `<span>${item.label}</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+          linksWrap.appendChild(anchor);
+        });
+      } else if (link && data.link) {
+        if (linksWrap && !linksWrap.contains(link)) {
+          linksWrap.innerHTML = "";
+          linksWrap.appendChild(link);
+        }
+        if (linksWrap) linksWrap.style.display = "";
+        link.href = data.link;
+      } else if (linksWrap) {
+        linksWrap.innerHTML = "";
+        linksWrap.style.display = "none";
+      }
 
       tagsWrap.innerHTML = "";
       data.tags.forEach((tag) => {
@@ -235,7 +365,10 @@ function initProjectModal() {
         tagsWrap.appendChild(span);
       });
 
-      if (data.image) {
+      if (data.video) {
+        media.innerHTML = `<video src="${data.video}" aria-label="${data.videoAlt || data.title}" class="modal__video" controls playsinline preload="metadata"></video>`;
+        media.style.background = "none";
+      } else if (data.image) {
         media.innerHTML = `<img src="${data.image}" alt="${data.imageAlt || data.title}" class="modal__image" />`;
         media.style.background = "none";
       } else {
@@ -276,6 +409,56 @@ function initProjectModal() {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modal.classList.contains("is-open")) closeModal();
   });
+}
+
+/* ---------- In-progress project rail ---------- */
+function initProjectLabRail() {
+  const viewport = document.querySelector(".projects-lab__viewport");
+  const rail = document.querySelector(".projects-lab__rail");
+  if (!viewport || !rail) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+
+  const originalCards = Array.from(rail.querySelectorAll(".project-card"));
+
+  function appendCloneSet() {
+    originalCards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      clone.removeAttribute("tabindex");
+      clone.removeAttribute("role");
+      clone.classList.remove("reveal");
+      clone.classList.add("is-visible");
+      clone.dataset.railClone = "true";
+      rail.appendChild(clone);
+    });
+  }
+
+  appendCloneSet();
+  while (rail.scrollWidth < viewport.clientWidth * 2.2) {
+    appendCloneSet();
+  }
+
+  function updateRailMotion() {
+    const firstClone = rail.querySelector("[data-rail-clone='true']");
+    if (!firstClone) return;
+
+    const travel = -firstClone.offsetLeft;
+    viewport.style.setProperty("--lab-travel", `${travel}px`);
+    viewport.style.setProperty("--lab-duration", `${Math.max(18, Math.abs(travel) / 36)}s`);
+    rail.style.animationPlayState = travel === 0 ? "paused" : "";
+  }
+
+  updateRailMotion();
+
+  if ("ResizeObserver" in window) {
+    const resizeObserver = new ResizeObserver(updateRailMotion);
+    resizeObserver.observe(viewport);
+    resizeObserver.observe(rail);
+  } else {
+    window.addEventListener("resize", updateRailMotion, { passive: true });
+  }
 }
 
 /* ---------- Copy email to clipboard ---------- */

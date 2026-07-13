@@ -21,7 +21,10 @@
 
   <!-- Floating Navigation -->
   <nav class="nav" id="nav">
-    <a href="#top" class="nav__mark">SFN</a>
+    <a href="#top" class="nav__mark" aria-label="Syed Farhan Naqvi home">
+      <img src="assets/farhan-logo-2026.webp" alt="" aria-hidden="true" />
+      <span>SFN</span>
+    </a>
     <div class="nav__links">
       <a href="#about" data-nav="about">About</a>
       <a href="#skills" data-nav="skills">Skills</a>
@@ -92,7 +95,7 @@
 
       <div class="about__grid">
         <div class="about__avatar reveal">
-          <img src="assets/86bcde27-4376-42b6-beaa-f80df090c561.jpg" alt="Farhan Naqvi portrait" />
+          <img src="assets/farhan-portrait-2026.webp" alt="Farhan Naqvi portrait" />
           <div class="about__status">
             <span class="status-dot"></span> Available for new opportunities
           </div>
@@ -247,6 +250,135 @@
           </div>
         </article>
 
+        <article class="project-card reveal" data-project="3">
+          <div class="project-card__media">
+            <video class="project-card__placeholder" src="https://raw.githubusercontent.com/shurender/Chronos-AI/main/Frontend/public/demo-video.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Chronos AI application demo video"></video>
+            <span class="project-card__view">View case study</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>Chronos AI</h3>
+              <span class="project-card__year">AMD Hackathon</span>
+            </div>
+            <p>Decision-intelligence digital twin MVP built for the AMD Developer Hackathon Act II, using memory graphs to simulate evidence-backed future branches.</p>
+            <div class="chips chips--sm">
+              <span class="chip">React</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">LangGraph</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="4">
+          <div class="project-card__media">
+            <img src="assets/torqbase-cover.webp" alt="TorqBase HackXplore Hirth Engines challenge cover slide" class="project-card__placeholder" />
+            <span class="project-card__view">View case study</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__head">
+              <h3>TorqBase: AI Knowledge Platform</h3>
+              <span class="project-card__year">Hackathon</span>
+            </div>
+            <p>AI-powered engine knowledge platform that transforms technical documents into cited answers and interactive diagnostic knowledge graphs.</p>
+            <div class="chips chips--sm">
+              <span class="chip">FastAPI</span>
+              <span class="chip">pgvector</span>
+              <span class="chip">D3.js</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-lab reveal">
+        <div class="projects-lab__head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__bracket">//</span> in-the-lab</p>
+            <h3>Projects still taking shape</h3>
+          </div>
+          <p>Active builds, private prototypes, and research-grade systems that are not fully public yet.</p>
+        </div>
+
+        <div class="projects-lab__viewport" aria-label="In-progress projects">
+          <div class="projects-lab__rail">
+            <article class="project-card project-card--lab reveal" data-project="5">
+              <div class="project-card__media">
+                <div class="project-card__placeholder" style="--g1:#34D399; --g2:#60A5FA;"></div>
+                <span class="project-card__view">View case study</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__head">
+                  <h3>FlowForge</h3>
+                  <span class="project-card__year">In progress</span>
+                </div>
+                <p>Production-grade data pipeline orchestration platform for visual, YAML, and Python SDK authoring with unified IR, executor compilation, deployment, and observability.</p>
+                <div class="chips chips--sm">
+                  <span class="chip">Go</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Argo/Airflow</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--lab reveal" data-project="6">
+              <div class="project-card__media">
+                <div class="project-card__placeholder" style="--g1:#818CF8; --g2:#22D3EE;"></div>
+                <span class="project-card__view">View case study</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__head">
+                  <h3>ErasureGraph</h3>
+                  <span class="project-card__year">In progress</span>
+                </div>
+                <p>Proof-carrying deletion dashboard for tracking privacy erasure requests across source records, exports, embeddings, caches, analytics datasets, training manifests, and backups.</p>
+                <div class="chips chips--sm">
+                  <span class="chip">React</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Supabase</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--lab reveal" data-project="7">
+              <div class="project-card__media">
+                <div class="project-card__placeholder" style="--g1:#F59E0B; --g2:#64748B;"></div>
+                <span class="project-card__view">View case study</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__head">
+                  <h3>Private Agent Governance Prototype</h3>
+                  <span class="project-card__year">In development</span>
+                </div>
+                <p>Private local-first dashboard exploring agent-aware website policy workflows, generated configuration files, simulations, and owner-controlled governance patterns.</p>
+                <div class="chips chips--sm">
+                  <span class="chip">React</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Local-first</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--lab reveal" data-project="8">
+              <div class="project-card__media">
+                <div class="project-card__placeholder" style="--g1:#F97316; --g2:#8B5CF6;"></div>
+                <span class="project-card__view">View case study</span>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__head">
+                  <h3>FounderOS</h3>
+                  <span class="project-card__year">AMD Hackathon</span>
+                </div>
+                <p>AI operating system for startup founders that turns one startup idea into a structured workspace coordinated by 9 AI executive agents.</p>
+                <div class="chips chips--sm">
+                  <span class="chip">React</span>
+                  <span class="chip">Express</span>
+                  <span class="chip">SSE</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
         <!-- <article class="project-card reveal" data-project="3">
           <div class="project-card__media">
             <div class="project-card__placeholder" style="--g1:#F472B6; --g2:#A78BFA;"></div>
@@ -339,7 +471,7 @@
   <!-- ============ EXPERIENCE ============ -->
   <section class="section" id="experience">
     <div class="section__inner">
-      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 05 &mdash; experience</p>
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 04 &mdash; experience</p>
       <h2 class="section__title reveal">Where I've worked</h2>
 
       <div class="timeline">
@@ -397,7 +529,7 @@
   <!-- ============ EDUCATION ============ -->
   <section class="section" id="education">
     <div class="section__inner">
-      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 06 &mdash; education</p>
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 05 &mdash; education</p>
       <h2 class="section__title reveal">Academic background</h2>
       <div class="timeline">
 
@@ -452,7 +584,7 @@
 
     
     <div class="section__inner">
-      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 07 &mdash; awards</p>
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 06 &mdash; awards</p>
       <h2 class="section__title reveal">Recognition &amp; publications</h2>
       <p class="section__lead reveal">Selected awards and published research that highlight practical impact and academic contributions.</p>
       <div class="projects__grid">
@@ -509,7 +641,7 @@
   <!-- ============ BLOGS ============ -->
   <section class="section" id="blogs">
     <div class="section__inner">
-      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 08 &mdash; featured blogs</p>
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 07 &mdash; featured blogs</p>
       <h2 class="section__title reveal">Featured writing on Hashnode</h2>
       <p class="section__lead reveal">A curated selection of recent technical posts, plus a quick path to the full Hashnode archive.</p>
 
@@ -565,7 +697,7 @@
   <!-- ============ CONTACT ============ -->
   <section class="section section--contact" id="contact">
     <div class="section__inner">
-      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 09 &mdash; contact</p>
+      <p class="eyebrow reveal"><span class="eyebrow__bracket">//</span> 08 &mdash; contact</p>
       <h2 class="contact__title reveal">
         Let's build something <span class="grad-text">great</span> together.
       </h2>
@@ -650,10 +782,12 @@
           <div id="modalOutcome"></div>
         </div>
 
-        <a href="#" id="modalLink" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-          <span>View live project</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+        <div class="modal__links" id="modalLinks">
+          <a href="#" id="modalLink" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            <span>View live project</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
