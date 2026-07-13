@@ -92,12 +92,15 @@ function initHeroTypewriter() {
   const el = document.getElementById("heroType");
   if (!el) return;
 
-  const words = ["distributed systems", "data pipelines", 
-  "storage infrastructure",
-  "agentic AI products",
-  "ML systems",
-  "gRPC backend services",
-  "retrieval architectures"];
+  const words = [
+    "AI-native products",
+    "agentic workflows",
+    "backend platforms",
+    "data infrastructure",
+    "developer tools",
+    "distributed systems",
+    "gRPC backend services",
+  ];
   let wordIndex = 0;
   let charIndex = 0;
   let deleting = false;
